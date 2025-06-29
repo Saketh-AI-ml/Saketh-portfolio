@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Saketh Reddy</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS for animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(145deg, #380101, #8b0000);
+      color: white;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .skill-bar {
+      transition: width 1.5s ease-in-out;
+    }
+  </style>
+</head>
+
+<body onload="AOS.init();">
+
+<!-- 🔴 Red-themed Particles Background -->
+<div id="particles-js"></div>
+</header>
+<div class="h-20"></div>
+
+<!-- 🔥 About Section -->
+<section class="px-6 py-20 sm:px-16" id="about">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-14">
+
+    <!-- 📸 Image -->
+    <div data-aos="fade-right">
+      <div class="w-52 h-52 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-red-600 shadow-2xl">
+        <img src="c:\Users\user\Downloads\WhatsApp Image 2025-06-07 at 8.36.11 PM.jpeg" alt="Saketh Reddy" class="w-full h-full object-cover">
+      </div>
+    </div>
+
+    <!-- 🧠 Text + Skill Bars -->
+    <div class="w-full" data-aos="fade-left">
+      <h2 class="text-4xl sm:text-5xl font-extrabold mb-6 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 text-transparent bg-clip-text">
+        About Me
+      </h2>
+
+      <p class="text-white text-lg mb-4">
+        I'm <span class="text-yellow-400 font-bold">Saketh Reddy Aluguvelli</span>, a passionate <span class="text-pink-400">AI/ML Engineer</span> in the making and a creative tech content creator.
+      </p>
+      <p class="text-gray-200 text-md mb-6">
+        I'm currently in my 3rd year of B.Tech CSE at Bhaskar Engineering College. I love building innovative AI projects, creating tutorials, and solving real-world problems using tech!
+      </p>
+
+      <!-- 🌟 Skill Bars -->
+      <div class="space-y-4">
+        <div>
+          <div class="flex justify-between mb-1 text-sm">
+            <span>Python</span><span>95%</span>
+          </div>
+          <div class="w-full h-3 bg-gray-700 rounded-full">
+            <div class="bg-red-500 h-3 rounded-full skill-bar" style="width: 95%;"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between mb-1 text-sm">
+            <span>Machine Learning</span><span>90%</span>
+          </div>
+          <div class="w-full h-3 bg-gray-700 rounded-full">
+            <div class="bg-orange-500 h-3 rounded-full skill-bar" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between mb-1 text-sm">
+            <span>Video Editing</span><span>85%</span>
+          </div>
+          <div class="w-full h-3 bg-gray-700 rounded-full">
+            <div class="bg-yellow-400 h-3 rounded-full skill-bar" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between mb-1 text-sm">
+            <span>HTML & CSS</span><span>88%</span>
+          </div>
+          <div class="w-full h-3 bg-gray-700 rounded-full">
+            <div class="bg-pink-500 h-3 rounded-full skill-bar" style="width: 88%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🔖 Tags -->
+      <div class="flex flex-wrap gap-3 mt-8">
+        <span class="bg-red-600 text-white px-4 py-1 rounded-full text-sm">AI/ML</span>
+        <span class="bg-yellow-500 text-black px-4 py-1 rounded-full text-sm">Python</span>
+        <span class="bg-orange-500 text-white px-4 py-1 rounded-full text-sm">Video Editing</span>
+        <span class="bg-pink-600 text-white px-4 py-1 rounded-full text-sm">HTML/CSS</span>
+        <span class="bg-purple-600 text-white px-4 py-1 rounded-full text-sm">YouTuber</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🎇 Particle Animation Config -->
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
+    "color": { "value": "#ffffff" },
+    "shape": { "type": "circle" },
+    "opacity": { "value": 0.2 },
+    "size": { "value": 3 },
+    "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.2, "width": 1 },
+    "move": { "enable": true, "speed": 2 }
+  },
+  "interactivity": {
+    "events": { "onhover": { "enable": true, "mode": "grab" } }
+  }
+});
+</script>
+
+</body>
+</html>

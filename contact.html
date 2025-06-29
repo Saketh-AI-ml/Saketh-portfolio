@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Saketh's Portfolio</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <p>If you’d like to collaborate or just say hi, feel free to drop a message below or reach me via social platforms!</p>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form" onsubmit="return handleFormSubmit(event)">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Social Media Links -->
+    <div class="social-media">
+      <a href="https://www.youtube.com/@yourchannel" target="_blank">📺 YouTube</a>
+      <a href="https://instagram.com/yourprofile" target="_blank">📸 Instagram</a>
+      <a href="https://github.com/yourgithub" target="_blank">💻 GitHub</a>
+      <a href="https://linkedin.com/in/yourlinkedin" target="_blank">🔗 LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- External JavaScript -->
+  <script src="contact2.js"></script>
+</body>
+</html>
